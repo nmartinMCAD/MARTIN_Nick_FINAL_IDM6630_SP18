@@ -3,7 +3,7 @@ version: '3'
 services:
   database:
     image: mysql:5.7
-    container_name: MARTIN-Nick-DB
+    container_name: MARTIN-Nick-FINAL-DB
     restart: always
     expose:
       - "3306"
@@ -17,7 +17,7 @@ services:
 
   wordpress:
     image: wordpress:4.8.2
-    container_name: MARTIN-Nick-WP
+    container_name: MARTIN-Nick-FINAL-WP
     restart: always
     ports:
       - "8080:80"
@@ -32,7 +32,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
-    container_name: MARTIN-Nick-PA
+    container_name: MARTIN-Nick-FINAL-PA
     ports:
       - "8181:80"
     restart: always
