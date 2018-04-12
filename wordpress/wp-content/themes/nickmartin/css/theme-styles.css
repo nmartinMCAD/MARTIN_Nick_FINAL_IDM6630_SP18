@@ -1,0 +1,156 @@
+html {
+  box-sizing: border-box;
+  overflow: scroll;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  background-color: #293E4F;
+}
+
+body.single {
+  background-color: #C2B655;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  font-family: 'Bungee Hairline', cursive;
+  height: 90%;
+  width: 375px;
+  position: fixed;
+  top: 2.5rem;
+  left: 0;
+  text-align: right;
+  padding: 2rem;
+  overflow: scroll;
+}
+
+h1 {
+  font-size: 3em;
+  display: inline;
+  letter-spacing: .4rem;
+  color: #FBE23E;
+}
+
+header nav {
+  margin-top: 2rem;
+}
+
+header nav ul {
+  float: right;
+}
+
+header nav li {
+  margin-bottom: 1.5rem;
+  text-align: right;
+}
+
+header nav li.categories {
+  margin-top: 5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 .5rem .5rem 2rem;
+}
+
+header a:hover {
+  color: #00C36F;
+  border-bottom: 1px solid #00C36F;
+  border-right: 1px solid #00C36F;
+}
+
+header a.top {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+}
+
+main, footer {
+  width: 75%;
+  float: right;
+  padding-top: 1.5rem;
+}
+
+main {
+  margin-bottom: 3rem;
+}
+
+article.post {
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #222;
+  color: #fff;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.post h2 {
+  font-size: 3em;
+  letter-spacing: .2rem;
+  display: inline;
+}
+
+.post h3 {
+  font-family: 'Bungee Hairline', cursive;
+}
+
+.post img {
+  display: block;
+  width: 500px;
+  height: 300px;
+  margin-bottom: .5rem;
+}
+
+.post p {
+  margin: 1rem 0;
+}
+
+a h2 {
+  color: #fff;
+  text-decoration: none;
+}
+
+a h2:hover {
+  color: #FBE23E;
+  text-decoration: none;
+  border-bottom: 1px solid #FBE23E;
+  border-right: 1px solid #FBE23E;
+  padding-right: 3rem;
+}
+
+article.category-text a h2:hover {
+  color: #9F2426;
+  text-decoration: none;
+  border-bottom: 1px solid #9F2426;
+  border-right: 1px solid #9F2426;
+  padding-right: 3rem;
+}
+
+article.category-video a h2:hover {
+  color: #EA70F2;
+  text-decoration: none;
+  border-bottom: 1px solid #EA70F2;
+  border-right: 1px solid #EA70F2;
+  padding-right: 3rem;
+}
