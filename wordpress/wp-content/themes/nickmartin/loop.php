@@ -1,5 +1,14 @@
 <!--<?php echo basename(__FILE__); ?>-->
-  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+  <?php
+
+  $product_post_type_query = array(
+    'post_type' => 'product',
+    'post_status' => 'publish'
+  );
+
+  $get_products = new WP_Query($product_post_type_query);
+
+  if ( $get_products->have_posts() ) : while ( $get_products->have_posts() ) : $get_products->the_post(); ?>
       <article <?php post_class(); ?>>
         <a href="<?php the_permalink(); ?>"><?php the_title( '<h2>', '</h2>' );?></a>
       </article>
