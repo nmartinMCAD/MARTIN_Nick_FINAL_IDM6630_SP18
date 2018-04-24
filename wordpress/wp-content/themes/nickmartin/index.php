@@ -4,6 +4,7 @@
 
 <main>
 
+  <?php get_template_part('hero-image'); ?>
   <?php get_template_part('loop'); ?>
 
 </main>

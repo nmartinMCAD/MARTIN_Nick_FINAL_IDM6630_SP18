@@ -10,9 +10,10 @@ nav.topNav {
   width: 100%;
   height: 100%;
   background-color: $black;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: -100%;
   z-index: 100;
-  display: none;
 }
 
 nav.topNav ul {
@@ -23,3 +24,16 @@ nav.topNav li {
   font-size: 8vw;
   margin-top: 8vw;
 }
+
+input {
+  display: none;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+}
+
+.menuCheckbox ~ nav.topNav { transition: left .666s ease .1s }
+
+.menuCheckbox:checked ~ nav.topNav { left: 0;}
