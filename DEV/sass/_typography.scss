@@ -16,6 +16,7 @@ a {
   border-bottom: 1px solid $white;
   margin-top: .5rem;
   padding-bottom: .25rem;
+  font-weight: $lightest;
 
 
   @include tablet {
@@ -28,7 +29,7 @@ a {
   }
 }
 
-.siteHeader h1 a {
+.siteHeader a {
   color: $white;
 }
 
@@ -70,4 +71,52 @@ nav.topNav i.fa-times-circle {
   right: 5%;
   font-size: 10vw;
   z-index: 150;
+}
+
+
+
+div.productCopy h3 {
+  font-size: 6vw;
+  margin-bottom: 2vw;
+}
+
+div.productCopy h4 {
+  color: $green;
+  font-weight: $lighter;
+}
+
+body.single-product div.productCopy  h3{
+  font-size: 10vw;
+}
+
+
+div.qtyCounter p {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  display: inline;
+}
+
+
+div.addlInfo h5 {
+  font-size: 6vw;
+  font-weight: $lighter;
+  display: inline;
+  margin-right: 4vw;
+}
+
+div.addlInfo i {
+  font-size: 6vw;
+}
+
+
+
+
+
+nav.footNav a {
+  color: $white;
+}
+
+div.footStoreInfo h6 {
+  color: $white;
+  font-size: 8vw;
 }

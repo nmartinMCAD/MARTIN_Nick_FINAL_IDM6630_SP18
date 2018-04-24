@@ -1,9 +1,18 @@
 //* Type *//
 $font: 'Josefin Sans', sans-serif;
 
+//*Type Weights*//
+$lighter: 400;
+$lightest: 300;
+
 //* colors *//
 $black: #222;
 $white: #fff;
+$grey: #ddd;
+$red: #FF4136;
+$green: #3D9970;
+
+$transBlack: hsla(0, 0%, 13%, 0.95);
 
 //*Media Queries*//
 $tablet-width: "screen and (min-width: 480px)";

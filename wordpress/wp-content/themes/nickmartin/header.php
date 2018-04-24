@@ -16,9 +16,9 @@
       <input type="checkbox" name="menuCheckbox" id="menuCheckbox" class="menuCheckbox" value="value">
       <label for="menuCheckbox" class="menuCheckbox"><i class="fas fa-bars"></i></label>
 
-      <h1><a href="http://localhost:8080/shop"><?php echo get_bloginfo('name'); ?></a></h1>
+      <h1><a href="http://localhost:8080/shop"><?php echo get_bloginfo('name');?></a></h1>
 
-      <i class="fas fa-shopping-cart"></i>
+      <a href="http://localhost:8080/checkout"><i class="fas fa-shopping-cart"></i></a>
 
       <?php get_template_part('nav'); ?>
     </header>

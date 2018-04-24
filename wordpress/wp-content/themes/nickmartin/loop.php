@@ -13,10 +13,14 @@
       <article <?php post_class(); ?>>
         <a href="<?php the_permalink(); ?>">
           <img src="<?php the_field( 'image' );?>">
-          <?php the_field( 'product_name' );?>
-          <?php the_field( 'price' );?>
+          <div class="productCopy">
+            <h3><?php the_field( 'product_name' );?></h3>
+            <h4><?php the_field( 'price' );?></h4>
+            <button class="ctaButton" type="button" name="quickViewButton">Quick View</button>
+          </div>
         </a>
       </article>
+      <div class="clearFix"></div>
   <?php endwhile; else : ?>
     <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
   <?php endif; ?>
