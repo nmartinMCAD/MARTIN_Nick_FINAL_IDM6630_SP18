@@ -28,7 +28,7 @@
 
     if ( $get_heroImage->have_posts() ) : while ( $get_heroImage->have_posts() ) : $get_heroImage->the_post(); ?>
       <div class="heroImageContainer">
-        <img class="" src="<?php the_field( 'image' );?>" alt="banner image of guitar pedal board in black and white">
+        <img class="heroImage" src="<?php the_field( 'image' );?>" alt="banner image of guitar pedal board in black and white">
       </div>
     <?php endwhile; else : ?>
       <p><?php esc_html_e( 'Sorry, no images matched your criteria.' ); ?></p>
