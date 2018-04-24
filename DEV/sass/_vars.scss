@@ -1,0 +1,23 @@
+//* Type *//
+$font: 'Josefin Sans', sans-serif;
+
+//* colors *//
+$black: #222;
+$white: #fff;
+
+//*Media Queries*//
+$tablet-width: "screen and (min-width: 480px)";
+$desktop-width: "screen and (min-width: 720px)";
+
+//*Mixins*//
+@mixin tablet {
+  @media #{$tablet-width} {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media #{$desktop-width} {
+    @content;
+  }
+}

@@ -1,0 +1,102 @@
+2018-04-23T15:58:51+00:00 CRITICAL Call to undefined function the_field()
+
+2018-04-23T16:03:10+00:00 CRITICAL Call to undefined function the_field()
+
+2018-04-23T16:03:15+00:00 CRITICAL Call to undefined function the_field()
+
+2018-04-23T16:04:11+00:00 CRITICAL Call to undefined function the_field()
+
+2018-04-23T16:05:31+00:00 CRITICAL Call to undefined function the_field()
+
+2018-04-23T16:09:16+00:00 CRITICAL Call to undefined function the_field()
+
+2018-04-23T16:09:17+00:00 CRITICAL Call to undefined function the_field()
+
+2018-04-23T16:09:18+00:00 CRITICAL Call to undefined function the_field()
+
+2018-04-23T16:09:20+00:00 CRITICAL Call to undefined function the_field()
+
+2018-04-23T16:09:22+00:00 CRITICAL Call to undefined function the_field()
+
+2018-04-23T16:09:39+00:00 CRITICAL Call to undefined function the_field()
+
+2018-04-23T16:13:07+00:00 CRITICAL Call to a member function have_posts() on null
+
+2018-04-23T16:21:08+00:00 CRITICAL Call to undefined function the_field()
+
+2018-04-23T16:21:20+00:00 CRITICAL Call to undefined function the_field()
+
+2018-04-23T16:22:25+00:00 CRITICAL Call to undefined function the_field()
+
+2018-04-23T16:24:23+00:00 CRITICAL Call to undefined function the_field()
+
+2018-04-23T16:26:40+00:00 CRITICAL Call to undefined function the_field()
+
+2018-04-23T16:29:08+00:00 CRITICAL Call to undefined function the_price()
+
+2018-04-23T16:29:16+00:00 CRITICAL Call to undefined function the_cost()
+
+2018-04-23T16:33:37+00:00 CRITICAL Uncaught exception 'Exception' with message 'Invalid product.' in /var/www/html/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php:149
+Stack trace:
+#0 /var/www/html/wp-content/plugins/woocommerce/includes/class-wc-data-store.php(149): WC_Product_Data_Store_CPT->read(Object(WC_Product))
+#1 /var/www/html/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(135): WC_Data_Store->read(Object(WC_Product))
+#2 /var/www/html/wp-content/themes/nickmartin/loop.php(12): WC_Product->__construct(73)
+#3 /var/www/html/wp-includes/template.php(690): require('/var/www/html/w...')
+#4 /var/www/html/wp-includes/template.php(647): load_template('/var/www/html/w...', false)
+#5 /var/www/html/wp-includes/general-template.php(167): locate_template(Array, true, false)
+#6 /var/www/html/wp-content/themes/nickmartin/index.php(7): get_template_part('loop')
+#7 /var/www/html/wp-includes/template-loader.php(74): include('/var/www/html/w...')
+#8 /var/www/html/wp-blog-header.php(19): req
+
+2018-04-23T16:34:02+00:00 CRITICAL Uncaught exception 'Exception' with message 'Invalid product.' in /var/www/html/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php:149
+Stack trace:
+#0 /var/www/html/wp-content/plugins/woocommerce/includes/class-wc-data-store.php(149): WC_Product_Data_Store_CPT->read(Object(WC_Product))
+#1 /var/www/html/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(135): WC_Data_Store->read(Object(WC_Product))
+#2 /var/www/html/wp-content/themes/nickmartin/loop.php(12): WC_Product->__construct(73)
+#3 /var/www/html/wp-includes/template.php(690): require('/var/www/html/w...')
+#4 /var/www/html/wp-includes/template.php(647): load_template('/var/www/html/w...', false)
+#5 /var/www/html/wp-includes/general-template.php(167): locate_template(Array, true, false)
+#6 /var/www/html/wp-content/themes/nickmartin/index.php(7): get_template_part('loop')
+#7 /var/www/html/wp-includes/template-loader.php(74): include('/var/www/html/w...')
+#8 /var/www/html/wp-blog-header.php(19): req
+
+2018-04-23T16:34:30+00:00 CRITICAL Uncaught exception 'Exception' with message 'Invalid product.' in /var/www/html/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php:149
+Stack trace:
+#0 /var/www/html/wp-content/plugins/woocommerce/includes/class-wc-data-store.php(149): WC_Product_Data_Store_CPT->read(Object(WC_Product))
+#1 /var/www/html/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(135): WC_Data_Store->read(Object(WC_Product))
+#2 /var/www/html/wp-content/themes/nickmartin/loop.php(12): WC_Product->__construct(73)
+#3 /var/www/html/wp-includes/template.php(690): require('/var/www/html/w...')
+#4 /var/www/html/wp-includes/template.php(647): load_template('/var/www/html/w...', false)
+#5 /var/www/html/wp-includes/general-template.php(167): locate_template(Array, true, false)
+#6 /var/www/html/wp-content/themes/nickmartin/index.php(7): get_template_part('loop')
+#7 /var/www/html/wp-includes/template-loader.php(74): include('/var/www/html/w...')
+#8 /var/www/html/wp-blog-header.php(19): req
+
+2018-04-23T16:35:59+00:00 CRITICAL Call to a member function get_price() on boolean
+
+2018-04-23T16:36:06+00:00 CRITICAL Call to a member function get_price() on boolean
+
+2018-04-23T16:36:08+00:00 CRITICAL Call to a member function get_price() on boolean
+
+2018-04-23T16:36:31+00:00 CRITICAL Call to a member function get_price_html() on boolean
+
+2018-04-23T16:37:02+00:00 CRITICAL Call to a member function get_price_html() on boolean
+
+2018-04-23T18:12:55+00:00 CRITICAL Call to a member function get_price_html() on boolean
+
+2018-04-23T18:12:59+00:00 CRITICAL Call to a member function get_price_html() on boolean
+
+2018-04-23T18:13:00+00:00 CRITICAL Call to a member function get_price_html() on boolean
+
+2018-04-23T18:13:02+00:00 CRITICAL Call to a member function get_price_html() on boolean
+
+2018-04-23T18:13:10+00:00 CRITICAL Call to a member function get_price_html() on boolean
+
+2018-04-23T18:20:49+00:00 CRITICAL Call to a member function get_price_html() on boolean
+
+2018-04-23T18:24:22+00:00 CRITICAL Call to a member function get_price_html() on boolean
+
+2018-04-23T18:24:26+00:00 CRITICAL Call to a member function get_price_html() on boolean
+
+2018-04-23T20:20:11+00:00 CRITICAL Call to a member function get_price_html() on boolean
+
