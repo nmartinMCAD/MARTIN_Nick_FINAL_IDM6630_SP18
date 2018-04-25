@@ -2,9 +2,11 @@
 
 <?php define( 'WP_USE_THEMES', false ); get_header(); ?>
 <?php get_template_part('hero-image'); ?>
+<div class="categoryTitleContainer">
+  <h2><?php single_cat_title();?></h2>
+</div>
 
 <main>
-
   <?php
 
   $product_query = array(
@@ -16,6 +18,7 @@
   $get_products = new WP_Query($product_query);
 
   if ( $get_products->have_posts() ) : while ( $get_products->have_posts() ) : $get_products->the_post(); ?>
+
     <article <?php post_class(); ?>>
       <a href="<?php the_permalink(); ?>">
         <img src="<?php the_field( 'image' );?>">
@@ -31,6 +34,7 @@
       <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
     <?php endif; ?>
 </main>
+<div class="clearFix"></div>
 
 <?php get_footer(); ?>
 

@@ -14,6 +14,7 @@
             <div class="clearFix"></div>
           <button class="ctaButton" type="button" name="addToCartButton">Add to Cart</button>
         </div>
+        <div class="clearFix"></div>
         <div class="addlInfo">
           <h5>DESC</h5><i class="fas fa-plus"></i>
         </div>

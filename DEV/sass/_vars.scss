@@ -16,11 +16,18 @@ $transBlack: hsla(0, 0%, 13%, 0.95);
 
 //*Media Queries*//
 $tablet-width: "screen and (min-width: 480px)";
-$desktop-width: "screen and (min-width: 960px)";
+$large-tablet-width: "screen and (min-width: 760px)";
+$desktop-width: "screen and (min-width: 1200px)";
 
 //*Mixins*//
 @mixin tablet {
   @media #{$tablet-width} {
+    @content;
+  }
+}
+
+@mixin largeTablet {
+  @media #{$large-tablet-width} {
     @content;
   }
 }

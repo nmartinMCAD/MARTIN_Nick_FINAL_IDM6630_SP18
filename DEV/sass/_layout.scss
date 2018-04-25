@@ -11,7 +11,7 @@ header.siteHeader {
   position: relative;
 }
 
-nav.topNav {
+nav.mobileTabNav {
   width: 100%;
   height: 100%;
   background-color: $transBlack;
@@ -19,16 +19,30 @@ nav.topNav {
   top: 0;
   left: -100%;
   z-index: 100;
+
+  @include desktop {
+    position: static;
+  }
 }
 
-nav.topNav ul {
+nav.mobileTabNav ul {
   margin: 5rem 2rem 0 2rem;
 }
 
-nav.topNav li {
-  font-size: 8vw;
+nav.mobileTabNav li {
   margin-top: 8vw;
   font-weight: $lightest;
+
+  @include tablet {
+    margin-top: 2.4rem;
+  }
+}
+
+nav.mobileTabNav {
+  @include desktop {
+    visibility: hidden;
+    display: none;
+  }
 }
 
 input {
@@ -40,25 +54,83 @@ label {
   cursor: pointer;
 }
 
-.menuCheckbox ~ nav.topNav { transition: left .666s ease .1s }
+.menuCheckbox ~ nav.mobileTabNav { transition: left .666s ease .1s }
 
-.menuCheckbox:checked ~ nav.topNav { left: 0;}
+.menuCheckbox:checked ~ nav.mobileTabNav { left: 0;}
+
+nav.desktopNav {
+  display: none;
+  visibility: hidden;
+
+  @include desktop {
+    display: block;
+    visibility: visible;
+    position: absolute;
+    top: 50%;
+    right: 6rem;
+  }
+}
+
+nav.desktopNav ul li {
+    display: inline;
+}
+
+body.category div.categoryTitleContainer {
+  text-align: center;
+  border-bottom: 1px solid $black;
+  padding: 5vw 0 4vw 0;
+
+  @include tablet {
+    padding: 1.4rem 0 1.2rem 0;
+  }
+}
 
 main {
   width: 95%;
   margin: auto;
   padding-bottom: 80vw;
+
+  @include tablet {
+    padding-bottom: 20rem;
+  }
+
+  @include desktop {
+    width: 80%;
+    margin: 0;
+    float: right;
+  }
+}
+
+aside.desktopCatListContainer {
+  display: none;
+
+  @include desktop{
+    display: block;
+    width: 20%;
+    border-right: 1px solid $black;
+    float: left;
+  }
+}
+
+ul.desktopCatList {
+  display: none;
+
+  @include desktop{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    float: left;
+  }
 }
 
 article.type-product {
+  max-width: 560px;
+  margin: auto;
   margin-top: 16vw;
-}
 
-body.page-template-default article.type-product img,
-body.category article.type-product img {
-  width: 40%;
-  display: inline;
-  float: left;
+  @include tablet {
+    margin-top: 4rem;
+  }
 }
 
 body.page-template-default article.type-product div.productCopy,
@@ -76,20 +148,30 @@ button.ctaButton {
   color: $white;
   text-align: center;
   margin-top: 8vw;
-  padding: 4vw;
-  padding-top: 5vw;
+  padding: 5vw 4vw 4vw 4vw;
   border: none;
   border-radius: 5px;
   font-size: 4vw;
   font-family: $font;
   font-weight: $lighter;
   cursor: pointer;
+
+  @include tablet {
+    font-size: 1rem;
+    padding: 1.5rem 1rem 1rem 1rem;
+    width: 230px;
+    margin-top: 3rem;
+  }
 }
 
-body.single-product article.type-product img {
-  width: 100%;
-  display: block;
-  float: none;
+body.single-product article.type-product {
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 16vw;
+
+  @include tablet {
+    margin-top: 4rem;
+  }
 }
 
 body.single-product div.productCopy {
@@ -101,6 +183,17 @@ body.single-product div.productCopy {
   position: relative;
   text-align: right;
   margin-top: 16vw;
+
+  @include tablet {
+    margin-top: 4rem;
+  }
+
+  @include largeTablet {
+    float: right;
+    width: 60%;
+    margin-top: 0;
+    padding-right: 10%;
+  }
 }
 
 div.qtyCounter {
@@ -108,13 +201,10 @@ div.qtyCounter {
   position: relative;
   width: 72.5%;
   float: right;
-}
 
-div.qtyCounter p {
-  position: absolute;
-  top: 0;
-  font-size: 4.8vw;
-  font-weight: $lightest;
+  @include tablet {
+    margin: 1rem 0;
+  }
 }
 
 div.qtyCounter button {
@@ -125,6 +215,11 @@ div.qtyCounter button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+
+  @include tablet {
+    font-size: 2em;
+    padding: .5rem 1rem;
+  }
 }
 
 div.qtyCounter input {
@@ -135,23 +230,42 @@ div.qtyCounter input {
   padding: 1.5vw 5vw 1.5vw 5vw;
   text-align: center;
   border: 1px solid $black;
+
+  @include tablet {
+    font-size: 2em;
+    width: 4rem;
+    padding: .4rem 1.25rem .4rem 1.25rem;
+  }
 }
 
 body.single-product button.ctaButton {
   margin-top: 4vw;
   font-size: 6vw;
   font-weight: 700;
+
+  @include tablet {
+    margin-top: 1rem;
+    font-size: 1.5em;
+    width: 300px;
+  }
 }
 
 div.addlInfo {
   margin-top: 4vw;
   border-bottom: 1px solid $black;
   padding-bottom: 2vw;
+
+  @include tablet {
+    margin-top: 1rem;
+    padding-bottom: .5rem;
+  }
 }
 
-div.addlInfo:nth-of-type(1) {
-  margin-top: 16vw;
-}
+
+
+
+
+
 
 
 
@@ -159,9 +273,12 @@ footer {
   width: 100%;
   height: 50vw;
   background-color: $black;
-  margin-top: 16vw;
   position: absolute;
   bottom: 0;
+
+  @include tablet {
+    height: 16rem;
+  }
 }
 
 nav.footNav {
@@ -171,10 +288,18 @@ nav.footNav {
 
 nav.footNav ul {
   margin: 8vw 0 0 4vw;
+
+  @include tablet {
+    margin: 2rem 0 0 2rem;
+  }
 }
 
 nav.footNav ul li {
   margin-bottom: 4vw;
+
+  @include tablet {
+    margin-bottom: 1rem;
+  }
 }
 
 div.footStoreInfo {
@@ -182,4 +307,8 @@ div.footStoreInfo {
   float: right;
   text-align: right;
   padding: 8vw 4vw 0 0;
+
+  @include tablet {
+    padding: 2rem 2rem 0 0;
+  }
 }

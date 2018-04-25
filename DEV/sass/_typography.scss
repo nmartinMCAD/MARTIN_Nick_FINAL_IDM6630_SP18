@@ -65,12 +65,54 @@ a {
   text-decoration: none;
 }
 
-nav.topNav i.fa-times-circle {
+nav.mobileTabNav i.fa-times-circle {
   position: absolute;
   top: 5%;
   right: 5%;
   font-size: 10vw;
   z-index: 150;
+
+  @include tablet {
+    font-size: 3rem;
+    top: 7.5%;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+nav.mobileTabNav li {
+  font-size: 8vw;
+
+  @include tablet {
+    font-size: 2.4rem;
+  }
+}
+
+nav.desktopNav li {
+  font-size: 1.4rem;
+  margin-right: 1.4rem;
+}
+
+
+
+
+body.category h2 {
+  font-size: 8vw;
+  font-weight: $lighter;
+
+  @include tablet {
+    font-size: 2.2rem;
+  }
+}
+
+
+ul.desktopCatList li {
+  list-style-type: none;
+  font-size: 1.5em;
+  font-weight: $lighter;
+  margin-bottom: 1rem;
 }
 
 
@@ -78,15 +120,29 @@ nav.topNav i.fa-times-circle {
 div.productCopy h3 {
   font-size: 6vw;
   margin-bottom: 2vw;
+
+  @include tablet {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+  }
 }
 
 div.productCopy h4 {
+  font-size: 4vw;
   color: $green;
   font-weight: $lighter;
+
+  @include tablet {
+    font-size: 1rem;
+  }
 }
 
 body.single-product div.productCopy  h3{
   font-size: 10vw;
+
+  @include tablet {
+    font-size: 2.5em;
+  }
 }
 
 
@@ -94,6 +150,15 @@ div.qtyCounter p {
   writing-mode: vertical-lr;
   text-orientation: upright;
   display: inline;
+  position: absolute;
+  top: 0;
+  font-size: 4.8vw;
+  font-weight: $lightest;
+
+  @include tablet {
+    font-size: 1.2em;
+    right: 13rem;
+  }
 }
 
 
@@ -102,10 +167,18 @@ div.addlInfo h5 {
   font-weight: $lighter;
   display: inline;
   margin-right: 4vw;
+
+  @include tablet {
+    font-size: 1.5em;
+  }
 }
 
 div.addlInfo i {
   font-size: 6vw;
+
+  @include tablet {
+    font-size: 1.5em;
+  }
 }
 
 
@@ -114,9 +187,18 @@ div.addlInfo i {
 
 nav.footNav a {
   color: $white;
+  font-size: 4vw;
+
+  @include tablet {
+    font-size: 1rem;
+  }
 }
 
 div.footStoreInfo h6 {
   color: $white;
   font-size: 8vw;
+
+  @include tablet {
+    font-size: 2rem;
+  }
 }

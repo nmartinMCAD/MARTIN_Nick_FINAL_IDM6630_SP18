@@ -7,6 +7,7 @@
   <?php get_template_part('single-loop'); ?>
 
 </main>
+<div class="clearFix"></div>
 
 <?php get_footer(); ?>
 
