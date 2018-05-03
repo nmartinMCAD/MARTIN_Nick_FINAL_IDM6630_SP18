@@ -4,13 +4,14 @@
 
   $product_query = array(
     'post_type' => 'product',
-    'post_status' => 'publish'
+    'post_status' => 'publish',
+    'posts_per_page' => -1
   );
 
   $get_products = new WP_Query($product_query);
 
   if ( $get_products->have_posts() ) : while ( $get_products->have_posts() ) : $get_products->the_post(); ?>
-      <article <?php post_class(); ?>>
+      <article <?php post_class('clearFix'); ?>>
         <a href="<?php the_permalink(); ?>">
           <img src="<?php the_field( 'image' );?>">
           <div class="productCopy">
@@ -20,7 +21,6 @@
           </div>
         </a>
       </article>
-      <div class="clearFix"></div>
   <?php endwhile; else : ?>
     <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
   <?php endif; ?>

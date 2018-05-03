@@ -66,11 +66,15 @@
 
   add_theme_support( 'post-thumbnails' );
 
-  function loadCSS() {
-    wp_enqueue_style( 'theme-style', get_template_directory_uri() . '/css/theme-styles.css');
+  function load_theme_scripts() {
+    wp_enqueue_style( 'theme-styles', get_template_directory_uri() . '/css/theme-styles.css');
+    wp_enqueue_script( 'jquery-3.2.1.min', get_template_directory_uri() . '/js/jquery-3.2.1.min.js');
+    wp_enqueue_script( 'featherlight.min', get_template_directory_uri() . '/js/featherlight.min.js');
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', true);
   }
 
-  add_action( 'wp_enqueue_scripts', 'loadCSS' );
+  add_action( 'wp_enqueue_scripts', 'load_theme_scripts' );
+
 
   function customBodyClasses($myClasses) {
 

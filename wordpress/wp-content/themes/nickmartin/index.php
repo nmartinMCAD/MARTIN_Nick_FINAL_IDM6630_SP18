@@ -3,17 +3,16 @@
 <?php define( 'WP_USE_THEMES', false ); get_header();?>
 <?php get_template_part('hero-image');?>
 
-<aside class="desktopCatListContainer">
+<aside class="desktopCatListContainer clearFix">
   <div class="desktopCatList"><?php get_template_part('desktop-cat-list');?></div>
 </aside>
 
 
-<main>
+<main class="clearFix">
 
   <?php get_template_part('loop'); ?>
 
 </main>
-<div class="clearFix"></div>
 
 <?php get_footer(); ?>
 

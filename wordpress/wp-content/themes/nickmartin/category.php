@@ -6,7 +6,11 @@
   <h2><?php single_cat_title();?></h2>
 </div>
 
-<main>
+<aside class="desktopCatListContainer clearFix">
+  <div class="desktopCatList"><?php get_template_part('desktop-cat-list');?></div>
+</aside>
+
+<main class="clearFix">
   <?php
 
   $product_query = array(
@@ -19,7 +23,7 @@
 
   if ( $get_products->have_posts() ) : while ( $get_products->have_posts() ) : $get_products->the_post(); ?>
 
-    <article <?php post_class(); ?>>
+    <article <?php post_class('clearFix'); ?>>
       <a href="<?php the_permalink(); ?>">
         <img src="<?php the_field( 'image' );?>">
         <div class="productCopy">
@@ -29,12 +33,10 @@
         </div>
       </a>
     </article>
-  <div class="clearFix"></div>
     <?php endwhile; else : ?>
       <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
     <?php endif; ?>
 </main>
-<div class="clearFix"></div>
 
 <?php get_footer(); ?>
 

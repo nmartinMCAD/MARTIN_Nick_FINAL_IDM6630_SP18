@@ -1,5 +1,5 @@
 <!--<?php echo basename(__FILE__); ?>-->
-    <footer>
+    <footer class="clearFix">
       <nav class="footNav">
         <ul>
           <li><a href="http://localhost:8080/shop">Shop</a></li>

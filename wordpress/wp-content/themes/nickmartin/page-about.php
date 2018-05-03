@@ -2,6 +2,10 @@
 <?php define( 'WP_USE_THEMES', false ); get_header(); ?>
 <?php get_template_part('hero-image'); ?>
 
+<aside class="desktopCatListContainer clearFix">
+  <div class="desktopCatList"><?php get_template_part('desktop-cat-list');?></div>
+</aside>
+
 <main>
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <article <?php post_class(); ?>>
