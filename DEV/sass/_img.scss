@@ -17,6 +17,13 @@ body.category article.type-product img {
 
 .featherlight-inner img {
   width: 100%;
+  max-width: 512px;
+  margin: auto;
+
+  @include largeTablet {
+    width: 50%;
+    float: left;
+  }
 }
 
 body.single-product article.type-product img {

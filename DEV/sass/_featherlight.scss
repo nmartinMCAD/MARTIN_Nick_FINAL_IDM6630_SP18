@@ -58,13 +58,21 @@ html.with-featherlight {
 	overflow: auto;
 	width: 95%;
 	height: 80%;
-	padding: 5% 5% 0;
+	padding: 10px 10px 0;
 	border-bottom: 25px solid transparent;
 
-	/* dimensions: handling large content */
-	margin-left: 5%;
-	margin-right: 5%;
-	max-height: 95%;
+	@include tablet {
+		width: 80%;
+		padding: 2rem;
+	}
+
+	@include largeTablet {
+		padding: 2rem;
+	}
+
+	@include desktop {
+		width: 65%;
+	}
 
 	/* styling */
 	background: #fff;
@@ -139,18 +147,7 @@ html.with-featherlight {
 	box-sizing: border-box;
 }
 
-/* handling phones and small screens */
-@media only screen and (max-width: 1024px) {
-	.featherlight .featherlight-content {
-		/* dimensions: maximize lightbox with for small screens */
-		margin-left: 0;
-		margin-right: 0;
-		max-height: 98%;
 
-		padding: 10px 10px 0;
-		border-bottom: 10px solid transparent;
-	}
-}
 
 /* hide non featherlight items when printing */
 @media print {

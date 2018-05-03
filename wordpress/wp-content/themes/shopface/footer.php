@@ -2,9 +2,9 @@
     <footer class="clearFix">
       <nav class="footNav">
         <ul>
-          <li><a href="http://localhost:8080/shop">Shop</a></li>
-          <li><a href="http://localhost:8080/checkout">Checkout</a></li>
-          <li><a href="http://localhost:8080/about">About</a></li>
+          <li><a href="https://nmartin.studio.mcad.edu/spiritGlove/shop/">Shop</a></li>
+          <li><a href="https://nmartin.studio.mcad.edu/spiritGlove/checkout/">Checkout</a></li>
+          <li><a href="https://nmartin.studio.mcad.edu/spiritGlove/about/">About</a></li>
         </ul>
       </nav>
       <div class="footStoreInfo">
