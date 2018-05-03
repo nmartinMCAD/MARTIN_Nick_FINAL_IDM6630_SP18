@@ -1,8 +1,13 @@
 window.onload = function() {
-       console.log('Hello World!');
+       console.log('Hello?');
    }
 
 
-$("h5.showMore").click(function (evt) {
-	  $(this).next().slideToggle("slow");
+
+jQuery(document).ready(function($) {
+
+  $("div.addlInfo").click(function (evt) {
+  	  $("> div", this).slideToggle('fast');
+  });
+
 });

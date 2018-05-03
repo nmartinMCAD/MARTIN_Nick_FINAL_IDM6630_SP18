@@ -17,9 +17,14 @@
           <div class="productCopy">
             <h3><?php the_field( 'product_name' );?></h3>
             <h4><?php the_field( 'price' );?></h4>
-            <button class="ctaButton" type="button" name="quickViewButton">Quick View</button>
           </div>
         </a>
+        <button class="ctaButton" type="button" name="quickViewButton"  data-featherlight="#mylightbox">Quick View</button>
+        <div class="hide" id="mylightbox">
+            <img src="<?php the_field( 'image' );?>">
+            <h3><?php the_field( 'product_name' );?></h3>
+            <h4><?php the_field( 'price' );?></h4>
+        </div>
       </article>
   <?php endwhile; else : ?>
     <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
