@@ -38,8 +38,6 @@
               </div>
               <a class="fullDescLink clearFix" href="<?php the_permalink(); ?>">Go to Full Description<i class="fas fa-caret-right"></i></a>
           </div>
-
-
       </article>
   <?php endwhile; else : ?>
     <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
