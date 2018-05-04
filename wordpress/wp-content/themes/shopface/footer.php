@@ -2,9 +2,9 @@
     <footer class="clearFix">
       <nav class="footNav">
         <ul>
-          <li><a href="https://nmartin.studio.mcad.edu/spiritGlove/shop/">Shop</a></li>
-          <li><a href="https://nmartin.studio.mcad.edu/spiritGlove/checkout/">Checkout</a></li>
-          <li><a href="https://nmartin.studio.mcad.edu/spiritGlove/about/">About</a></li>
+          <li><a href="<?php echo get_page_link( get_page_by_title( shop )->ID ); ?>">Shop</a></li>
+          <li><a href="<?php echo get_page_link( get_page_by_title( checkout )->ID ); ?>">Checkout</a></li>
+          <li><a href="<?php echo get_page_link( get_page_by_title( about )->ID ); ?>">About</a></li>
         </ul>
       </nav>
       <div class="footStoreInfo">

@@ -50,7 +50,6 @@ html.with-featherlight {
 	position: relative;
 
 	/* position: centering vertical and horizontal */
-	text-align: left;
 	vertical-align: middle;
 	display: inline-block;
 
@@ -63,11 +62,10 @@ html.with-featherlight {
 
 	@include tablet {
 		width: 80%;
-		padding: 2rem;
 	}
 
 	@include largeTablet {
-		padding: 2rem;
+		padding: 4rem 2rem;
 	}
 
 	@include desktop {
@@ -86,6 +84,7 @@ html.with-featherlight {
 .featherlight .featherlight-inner {
 	/* make sure its visible */
 	display: block;
+	padding-bottom: 2rem;
 }
 
 /* don't show these though */
@@ -103,8 +102,9 @@ html.with-featherlight {
 	right: 0;
 
 	/* dimensions: 25px x 25px */
-	line-height: 25px;
-	width: 25px;
+	line-height: 50px;
+	width: 50px;
+	font-size: 2em;
 
 	/* styling */
 	cursor: pointer;

@@ -18,9 +18,11 @@
       <input type="checkbox" name="menuCheckbox" id="menuCheckbox" class="menuCheckbox" value="value">
       <label for="menuCheckbox" class="menuCheckbox"><i class="fas fa-bars"></i></label>
 
-      <h1><a href="https://nmartin.studio.mcad.edu/spiritGlove/shop/"><?php echo get_bloginfo('name');?></a></h1>
+      <h1><a href="<?php echo get_page_link( get_page_by_title( shop )->ID ); ?>"><?php echo get_bloginfo('name');?></a></h1>
 
-      <a href="https://nmartin.studio.mcad.edu/spiritGlove/checkout/"><i class="fas fa-shopping-cart"></i></a>
+
+
+      <a href="<?php echo get_page_link( get_page_by_title( checkout )->ID ); ?>"><i class="fas fa-shopping-cart"></i></a>
 
       <?php get_template_part('nav'); ?>
     </header>

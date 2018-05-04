@@ -155,13 +155,33 @@ body.category article.type-product div.productCopy {
   position: relative;
 }
 
+div.featherlight-inner div.lightboxCopyContainer {
+  @include largeTablet {
+    width: 50%;
+    float: right;
+    text-align: right;
+  }
+}
+
+div.featherlight-inner div.lightboxShoppingUI {
+  margin-top: 16vw;
+  margin-bottom: 4vw;
+
+  @include tablet {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    float: right;
+  }
+}
+
 button.ctaButton {
-  width: 90%;
+  width: 50%;
   background-color: $red;
   color: $white;
   text-align: center;
   margin-top: 8vw;
   padding: 5vw 4vw 4vw 4vw;
+  margin-left: 1rem;
   border: none;
   border-radius: 5px;
   font-size: 4vw;
@@ -174,6 +194,19 @@ button.ctaButton {
     padding: 1.5rem 1rem 1rem 1rem;
     width: 230px;
     margin-top: 3rem;
+  }
+}
+
+div.featherlight-inner button.ctaButton {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 1vw;
+  font-size: 5vw;
+  float: right;
+
+  @include tablet {
+    margin-top: .25rem;
+    font-size: 1.2em;
   }
 }
 
@@ -221,6 +254,11 @@ div.qtyCounter {
   @include tablet {
     margin: 1rem 0;
   }
+}
+
+div.featherlight-inner div.qtyCounter {
+  width: 62%;
+  text-align: right;
 }
 
 div.qtyCounter button {

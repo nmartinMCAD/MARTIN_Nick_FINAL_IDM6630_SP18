@@ -19,10 +19,19 @@ body.category article.type-product img {
   width: 100%;
   max-width: 512px;
   margin: auto;
+  margin-bottom: 12vw;
+  margin-top: 12vw;
+
+  @include tablet {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
 
   @include largeTablet {
     width: 50%;
     float: left;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 

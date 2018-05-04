@@ -17,15 +17,28 @@
           <div class="productCopy">
             <h3><?php the_field( 'product_name' );?></h3>
             <h4><?php the_field( 'price' );?></h4>
-            <button class="ctaButton" type="button" name="quickViewButton"  data-featherlight="#mylightbox">Quick View</button>
-            <div class="hide" id="mylightbox">
-                <img src="<?php the_field( 'image' );?>">
+          </div>
+          </a>
+          <button class="ctaButton" type="button" name="quickViewButton"  data-featherlight="#quickViewLightbox<?php echo get_the_id(); ?>">Quick View</button>
+          <div class="hide clearFix" id="quickViewLightbox<?php echo get_the_id(); ?>">
+              <img src="<?php the_field( 'image' );?>">
+              <div class="lightboxCopyContainer clearFix">
                 <h3><?php the_field( 'product_name' );?></h3>
                 <h4><?php the_field( 'price' );?></h4>
-                <p><?php the_field( 'description' );?></p>
-            </div>
+                <p class="lightboxCopy"><?php the_field( 'description' );?></p>
+              </div>
+              <div class="lightboxShoppingUI clearFix">
+                <div class="qtyCounter clearFix">
+                  <p>QTY</p>
+                  <button type="button" name="minusButton"><i class="fas fa-minus"></i></button>
+                  <input type="text" name="itemQTY" value="1">
+                  <button type="button" name="minusButton"><i class="fas fa-plus"></i></button>
+                </div>
+                <button class="ctaButton" type="button" name="addToCartButton">Add to Cart</button>
+              </div>
+              <a class="fullDescLink clearFix" href="<?php the_permalink(); ?>">Go to Full Description<i class="fas fa-caret-right"></i></a>
           </div>
-        </a>
+
 
       </article>
   <?php endwhile; else : ?>
