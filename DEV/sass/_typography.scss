@@ -96,6 +96,24 @@ nav.desktopNav li {
 }
 
 
+div.cartPreview h3 {
+  border-bottom: 1px solid $black;
+  padding-bottom: 4vw;
+
+  @include tablet {
+    padding-bottom: 1rem;
+  }
+}
+
+div.cartPreview p {
+  font-size: 4vw;
+
+  @include tablet {
+    font-size: 1rem;
+  }
+}
+
+
 
 
 body.category h2 {
@@ -122,18 +140,18 @@ div.productCopy h3 {
   margin-bottom: 2vw;
 
   @include tablet {
-    font-size: 2rem;
+    font-size: 2em;
     margin-bottom: .5rem;
   }
 }
 
 div.productCopy h4 {
-  font-size: 4vw;
+  font-size: 5vw;
   color: $green;
   font-weight: $lighter;
 
   @include tablet {
-    font-size: 1rem;
+    font-size: 1.2em;
   }
 }
 
@@ -149,12 +167,12 @@ div.featherlight-inner h3 {
 }
 
 div.featherlight-inner h4 {
-  font-size: 4vw;
+  font-size: 5vw;
   color: $green;
   font-weight: $lighter;
 
   @include tablet {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 }
 
@@ -206,22 +224,6 @@ body.single-product div.productCopy  h3{
 
   @include tablet {
     font-size: 2.5em;
-  }
-}
-
-
-div.qtyCounter p {
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-  display: inline;
-  position: absolute;
-  top: 0;
-  font-size: 4.8vw;
-  font-weight: $lightest;
-
-  @include tablet {
-    font-size: 1.2em;
-    right: 13rem;
   }
 }
 

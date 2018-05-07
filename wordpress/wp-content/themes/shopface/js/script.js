@@ -38,6 +38,17 @@ jQuery(document).ready(function($) {
     }
   }
 
+//Cart Preview Div on hover on Cart Icon
+  $("i.fa-shopping-cart").hover(function (evt) {
+      $("div.cartPreview").fadeIn('fast');
+      $("html").css('overflow', 'hidden');
+  });
+
+  $("div.cartPreview").mouseleave(function (evt) {
+    $(this).fadeOut('slow');
+    $("html").css('overflow', 'scroll');
+  });
+
 //Lightbox accessed via the 'Quick View' button on the product listings
   $("div.addlInfo").click(function (evt) {
   	  $("> div", this).slideToggle('fast');

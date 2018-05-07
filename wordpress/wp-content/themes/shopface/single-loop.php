@@ -6,7 +6,6 @@
           <h3><?php the_field( 'product_name' );?></h3>
           <h4><?php the_field( 'price' );?></h4>
             <div class="qtyCounter clearFix">
-              <p>QTY</p>
               <button type="button" name="minusButton"><i class="fas fa-minus"></i></button>
               <input type="text" name="itemQTY" value="1">
               <button type="button" name="minusButton"><i class="fas fa-plus"></i></button>

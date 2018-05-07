@@ -10,6 +10,14 @@
   <div class="desktopCatList"><?php get_template_part('desktop-cat-list');?></div>
 </aside>
 
+<div class="cartPreview">
+  <h3>cart</h3>
+  <div class="productDisplay">
+    <p>Here's where the products will go. How they will go? Excellent question.</p>
+  </div>
+  <a href="<?php echo get_page_link( get_page_by_title( checkout )->ID ); ?>"><button class="ctaButton" type="button" name="goToButton">Go To Checkout</button></a>
+</div>
+
 <main class="clearFix">
   <?php
 
@@ -40,7 +48,6 @@
             </div>
             <div class="lightboxShoppingUI clearFix">
               <div class="qtyCounter clearFix">
-                <p>QTY</p>
                 <button type="button" name="minusButton"><i class="fas fa-minus"></i></button>
                 <input type="text" name="itemQTY" value="1">
                 <button type="button" name="minusButton"><i class="fas fa-plus"></i></button>
