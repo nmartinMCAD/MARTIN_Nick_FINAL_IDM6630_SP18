@@ -1,3 +1,5 @@
+
+
 <!--<?php echo basename(__FILE__); ?>-->
 
 <?php define( 'WP_USE_THEMES', false ); get_header(); ?>
@@ -9,7 +11,7 @@
 <div class="cartPreview">
   <h3>cart</h3>
   <div class="productDisplay">
-    <p>Here's where the products will go. How they will go? Excellent question.</p>
+    <p>This is ideally where a cart preview feature would live however, coding a dynamic cart from scratch proved too lengthy an endeavor for the time remaining.</p>
   </div>
   <a href="<?php echo get_page_link( get_page_by_title( checkout )->ID ); ?>"><button class="ctaButton" type="button" name="goToButton">Go To Checkout</button></a>
 </div>

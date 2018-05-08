@@ -2,7 +2,7 @@ img {
   display: block;
 }
 
-img.heroImage {
+img, img.heroImage {
   width: 100%;
 }
 
@@ -15,6 +15,22 @@ body.category article.type-product img {
   float: left;
 }
 
+body.single-product article.type-product img {
+  width: 100%;
+  margin: auto;
+  max-width: 512px;
+  display: block;
+  float: none;
+
+  @include largeTablet {
+    width: 50%;
+    margin: 0;
+    display: inline;
+    float: left;
+  }
+}
+
+/* lightbox overrides - additional styling found in featherlight.scss */
 .featherlight-inner img {
   width: 100%;
   max-width: 512px;
@@ -35,17 +51,19 @@ body.category article.type-product img {
   }
 }
 
-body.single-product article.type-product img {
-  width: 100%;
+/* about page image styling */
+main.aboutMain img {
+  max-width: 500px;
   margin: auto;
-  max-width: 512px;
-  display: block;
-  float: none;
+
+  @include tablet {
+    width: 95%;
+    margin-top: 3rem;
+  }
 
   @include largeTablet {
-    width: 50%;
-    margin: 0;
-    display: inline;
+    width: 40%;
     float: left;
+    margin-top: 0;
   }
 }

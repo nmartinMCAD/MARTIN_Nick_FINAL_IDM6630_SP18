@@ -1,4 +1,4 @@
-
+//jQuery no-conflict wrapper - would affect Wordpress otherwise
 jQuery(document).ready(function($) {
 
 //Sticky Cateogory Menu for Desktop where the Catlegory list will clone and scroll with the window
@@ -44,14 +44,14 @@ jQuery(document).ready(function($) {
       $("html").css('overflow', 'hidden');
   });
 
+//Cart preview hide on mouseleave
   $("div.cartPreview").mouseleave(function (evt) {
     $(this).fadeOut('slow');
     $("html").css('overflow', 'scroll');
   });
 
-//Lightbox accessed via the 'Quick View' button on the product listings
+//Lightbox accessed via the 'Quick View' button on the product post types on primary pages
   $("div.addlInfo").click(function (evt) {
   	  $("> div", this).slideToggle('fast');
   });
-
 });
