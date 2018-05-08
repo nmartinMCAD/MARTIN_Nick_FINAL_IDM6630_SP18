@@ -1,5 +1,3 @@
-
-
 <!--<?php echo basename(__FILE__); ?>-->
 
 <?php define( 'WP_USE_THEMES', false ); get_header(); ?>
@@ -47,6 +45,7 @@
               <h3><?php the_field( 'product_name' );?></h3>
               <h4><?php the_field( 'price' );?></h4>
               <p class="lightboxCopy"><?php the_field( 'description' );?></p>
+              <a class="fullDescLink clearFix" href="<?php the_permalink(); ?>">Go to Full Description<i class="fas fa-caret-right"></i></a>
             </div>
             <div class="lightboxShoppingUI clearFix">
               <div class="qtyCounter clearFix">
@@ -56,7 +55,6 @@
               </div>
               <button class="ctaButton" type="button" name="addToCartButton">Add to Cart</button>
             </div>
-            <a class="fullDescLink clearFix" href="<?php the_permalink(); ?>">Go to Full Description<i class="fas fa-caret-right"></i></a>
         </div>
     </article>
     <?php endwhile; else : ?>

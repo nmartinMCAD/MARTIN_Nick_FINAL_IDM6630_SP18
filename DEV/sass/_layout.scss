@@ -100,10 +100,15 @@ div.pageTitleContainer {
 main {
   width: 95%;
   margin: auto;
+  margin-bottom: 20vw;
+
+  @include tablet {
+    margin-bottom: 5rem;
+  }
 
   @include desktop {
     width: 80%;
-    margin: 0;
+    margin-bottom: 0;
     padding-left: 1rem;
     padding-bottom: 5rem;
     float: right;
@@ -144,6 +149,11 @@ ul.desktopCatList {
     padding: 1rem;
     float: left;
   }
+}
+
+/* fix for cloned sticky menu, so that it doesn't conceal content underneath it*/
+ul.cloned {
+  width: 20%;
 }
 
 
@@ -347,18 +357,17 @@ div.qtyCounter input {
 /* some lightbox overrides - additional styling found in featherlight.scss file */
 div.featherlight-inner div.lightboxCopyContainer {
   @include largeTablet {
-    width: 50%;
+    width: 45%;
     float: right;
-    text-align: right;
   }
 }
 
 div.featherlight-inner div.lightboxShoppingUI {
-  margin-top: 16vw;
+  margin-top: 2vw;
   margin-bottom: 4vw;
 
   @include tablet {
-    margin-top: 4rem;
+    margin-top: .5rem;
     margin-bottom: 1rem;
     float: right;
   }
@@ -374,6 +383,10 @@ div.featherlight-inner button.ctaButton {
   @include tablet {
     margin-top: .25rem;
     font-size: 1.2em;
+  }
+
+  @include largeTablet {
+    width: 70%;
   }
 }
 
@@ -420,7 +433,10 @@ div.descriptionContainer, div.specificationsContainer {
 
 div.descriptionContainer, div.specificationsContainer p {
   margin: 4vw 0;
-  font-size: 4vw;
+
+  @include tablet {
+    margin: 2rem 0;
+  }
 }
 
 

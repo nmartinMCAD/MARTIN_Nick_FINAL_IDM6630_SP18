@@ -185,6 +185,16 @@ div.addlInfo i {
   }
 }
 
+div.descriptionContainer p, div.specificationsContainer p {
+  font-size: 4.5vw;
+  font-weight: $lightest;
+  line-height: 1.5;
+
+  @include tablet {
+    font-size: 1.2rem;
+  }
+}
+
 
 /*featherlight lightbox typography overrides*/
 div.featherlight-inner h3 {
@@ -206,10 +216,20 @@ div.featherlight-inner h4 {
   }
 }
 
+div.lightboxCopyContainer p {
+  text-align: center;
+
+  @include largeTablet {
+    text-align: left;
+  }
+}
+
 div.featherlight-inner p.lightboxCopy {
-  font-size: 4vw;
-  margin-top: 6vw;
+  font-size: 4.5vw;
+  margin: auto;
+  margin-top: 8vw;
   line-height: 1.5;
+  max-width: 500px;
 
   @include tablet {
     font-size: 1em;
@@ -220,20 +240,14 @@ div.featherlight-inner p.lightboxCopy {
 a.fullDescLink {
   width: 100%;
   text-align: right;
-  float: right;
-  margin-top: 4vw;
-  font-size: 6vw;
+  display: block;
+  margin-top: 14vw;
+  font-size: 5vw;
   text-decoration: underline;
 
   @include tablet {
-    font-size: 1.5em;
-    margin-top: 1rem;
-  }
-
-  @include largeTablet {
-    width: 50%;
     font-size: 1.2em;
-    margin-top: .5rem;
+    margin-top: 3.5rem;
   }
 }
 
